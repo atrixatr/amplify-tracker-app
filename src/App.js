@@ -39,7 +39,8 @@ function App() {
     loadData()
   },[])
 
-
+  console.log("Message is" + myMessage);
+  console.log("In app.js");
 
   return (
     <Router>
@@ -54,6 +55,7 @@ function App() {
           <Route path = "/soonPage" element = {<SoonPage/>} />
         </Routes>
 
+        
         <p>hi {myMessage} hi</p>
 
       </div>

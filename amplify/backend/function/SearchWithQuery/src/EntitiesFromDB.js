@@ -1,10 +1,9 @@
 
-console.log("hi");
 
 
 
 function EntitiesFromDB() {
-    console.log("hi");
+    console.log("hi there");
     const mysql = require('mysql');
     let resultFromDB = null;
     const con = mysql.createConnection({
@@ -20,7 +19,7 @@ function EntitiesFromDB() {
         if (err) throw err;
         con.query('SELECT * from test.users', function (err, result, fields) {
 
-            console.log(result);
+            console.log("In database section");
             resultFromDB = result;
             console.log(22);
             console.log(resultFromDB);
